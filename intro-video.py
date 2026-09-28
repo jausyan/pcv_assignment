@@ -15,8 +15,8 @@ while cap.isOpened():
     filtered = cv2.bitwise_and(frame, frame, mask=mask)
 
 
-    cv2.imshow("Real Video", frame)
-    cv2.imshow("Filtered Video Window", filtered)
+    cv2.imshow("video feed", frame)
+    cv2.imshow("filtered vid", filtered)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
